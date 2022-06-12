@@ -1,0 +1,66 @@
+.all-products
+{
+ background-color: hsl(208, 100%, 97% , 0.4);
+}
+.product
+{
+  position: relative;
+  border: 1px solid hsla(0, 0%, 30%, 0.2);
+}
+
+.product button
+{
+ position:absolute;
+ top:5px;
+ right: 5px;
+ border: none;
+ color: #fff;
+ border-radius: 5px;
+ padding:3px 8px;
+}
+
+.product .product-info
+{
+  border-top: 1px solid hsla(0, 0%, 30%, 0.2);
+  background-color: hsla(0, 0%, 30%, 0.1);
+}
+
+.product .product-info p
+{
+  margin-bottom: 0%;
+}
+
+.side-bar
+{
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  box-shadow: 10px 0 5px -2px rgb(136, 136, 136, 0.2)
+}
+
+.side-bar a
+{
+  text-decoration: none;
+  color: black;
+}
+
+.main-btn
+{
+  border: none;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+
+.product a
+{
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (min-width:0px) and (max-width:992px)
+{
+  .side-bar
+  {
+    height: auto;
+  }
+}

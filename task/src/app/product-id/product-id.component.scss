@@ -1,0 +1,33 @@
+.side-bar
+{
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  box-shadow: 10px 0 5px -2px rgb(136, 136, 136, 0.2)
+}
+
+.side-bar a
+{
+  text-decoration: none;
+  color: black;
+}
+
+.product
+{
+
+  border: 1px solid hsla(0, 0%, 30%, 0.2);
+}
+
+.product .product-info
+{
+  border-top: 1px solid hsla(0, 0%, 30%, 0.2);
+  background-color: hsla(0, 0%, 30%, 0.1);
+}
+
+
+@media screen and (min-width:0px) and (max-width:992px)
+{
+  .side-bar
+  {
+    height: auto;
+  }
+}

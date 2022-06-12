@@ -1,0 +1,55 @@
+<div class="container-fluid mt-0">
+  <div class="row">
+
+   <div class="col-md-2">
+     <div class="side-bar">
+       <h4>Products</h4>
+       <p> <a routerLink="/all"> All( 8 )</a></p>
+       <p> <a routerLink="/simpl"> simple tools ( 3 )</a></p>
+       <p> <a routerLink="/complex"> Complex tools ( 5 )</a></p>
+     </div>
+   </div>
+
+  <div class="col-md-10 all-products">
+
+      <div class="container">
+      <div class="row justify-content-between">
+          <div class="col-md-10 mb-3 mt-2"> <h3>Products</h3></div>
+          <div class="col-md-2 mb-3 mt-2"> <button class="bg-warning px-5 main-btn">sync</button></div>
+      </div>
+      </div>
+
+
+
+
+<div class="container">
+  <div class="row ">
+       <div  *ngFor="let product of complexProducts"  class="col-md-3 mb-4">
+          <div *ngIf="product.category=='complex'" class="product text-center">
+            <img class="w-75" [src]="product.imageUrl==null? '/assets/images/tool.jpg' : product.imageUrl" alt="" >
+            <div class="product-info">
+            <h2 class="h5">{{product.name}}</h2>
+            <p class="text-muted">${{product.price}}.00</p>
+            <button  class="bg-primary"> <a  [routerLink]="['/id' , product.id]">sync</a>   </button>
+
+          </div>
+      </div>
+      <div *ngIf="product.category!=='complex'" class="display-none"></div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+ </div>
+
+</div>
+
+
+
+
+</div>
+</div>
